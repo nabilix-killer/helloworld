@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="oil.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+<div class="wrapper">
+    <div class="product-box">
+        <div class="all-images">
+        <div class="small-images">
+            <img src="R.png" onclick="clickimg(this)">
+            <img src="R (1).png" onclick="clickimg(this)">
+            <img src="R (2).png" onclick="clickimg(this)">
+            <img src="2453.png" onclick="clickimg(this)">
+        </div>
+        <div class="main-images">
+            <img src="R.png" id="imagebox">
+        </div>
+    </div>
+    </div>
+    <div class="text">
+        <div class="content">
+            <p class="brand">Brand : Apple </p>
+            <h2>Apple iPhone 12 (white, 64 gb)</h2>
+            <div class="review">
+                <span>(4.6)</span>
+                <span><i class='bx bxs-star'></i></span>
+            </div>
+            <div class="price-box">
+                <p class="price">&#8377; 77,900</p>
+                <strike>&#8377; 89,900</strike>
+            </div>
+            <p>Size : <select name="size" >
+                <option value="select colour">select colour</option>
+            <option value="black">black</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+            <option value="purple">purple</option>
+            </select></p>
+            <p>Quantity <input type="text" value="1" ></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+    </div>
+<script>
+    function clickimg(smallImg){
+        var fullImg = document.getElementById("imagebox");
+        fullImg.src = smallImg.src
+    }
+</script>
+
+
+
+</body>
+</html>
